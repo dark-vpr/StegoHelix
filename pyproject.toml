@@ -1,0 +1,13 @@
+[project]
+name = "stegohelix"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "argon2-cffi",
+    "numpy",
+    "opencv-python-headless",
+    "pycryptodome",
+    "streamlit",
+]
