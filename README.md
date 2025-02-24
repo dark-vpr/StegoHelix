@@ -8,19 +8,23 @@ StegoHelix is a cutting‐edge steganography application written in Python that 
 
 ## Table of Contents
 
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-  - [Using uv](#using-uv)
-  - [Alternative: Installing with pip](#alternative-installing-with-pip)
-- [Usage](#usage)
-  - [Running the Application](#running-the-application)
-  - [How It Works](#how-it-works)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
-- [Disclaimer](#disclaimer)
-- [Acknowledgments](#acknowledgments)
+- [StegoHelix](#stegohelix)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Project Structure](#project-structure)
+  - [Installation](#installation)
+    - [Using uv](#using-uv)
+    - [Alternative: Installing with pip](#alternative-installing-with-pip)
+  - [Usage](#usage)
+    - [Running the Application](#running-the-application)
+    - [How It Works](#how-it-works)
+      - [Encoding Process](#encoding-process)
+      - [Decoding Process](#decoding-process)
+  - [Dependencies](#dependencies)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Disclaimer](#disclaimer)
+  - [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -53,13 +57,18 @@ StegoHelix is a cutting‐edge steganography application written in Python that 
 
 ## Project Structure
 
-```
+```text
 StegoHelix/
-├── app.py                   # Main Streamlit GUI application
-├── pyproject.toml           # Project configuration managed by uv
+├── app.py                              # Main Streamlit GUI application
+├── docs/                               # Documentation folder
+│   ├── EDUNET_STEGANOGRAPHY.pptx       # Project presentation slides
+│   ├── images/                         # Example images for demonstration
+│   │   ├── image.png                   # Original cover image
+│   │   └── protected.png               # Encrypted image (password: KEY)
+├── pyproject.toml                      # Project configuration
 └── src/
-    ├── encoder.py           # Module for encoding messages into images
-    └── decoder.py           # Module for decoding messages from images
+    ├── encoder.py                      # Module for encoding messages into images
+    └── decoder.py                      # Module for decoding messages from images
 ```
 
 ---
